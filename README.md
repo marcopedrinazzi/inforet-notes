@@ -2,6 +2,8 @@
 
 **Per andare a capo due spazi di fila**
 
+## Lezione 2
+
 Spacy Linguistic Features https://spacy.io/usage/linguistic-features  
 Spacy 101 https://spacy.io/usage/spacy-101
 
@@ -27,4 +29,38 @@ How can we do the transformation into the vector space?
 - Idf
 - TfIDf (migliore) (By combining term frequency and inverse document frequency we obtain a measure that takes into account the specific relevance of a terms with respect to a document)
 
+## Lezione 3
+
 How can we know if these are good answers or not?
+
+La nozione di qualità dipende dal task che vogliamo fare. 
+Non basta avere un sistema e un dataset. Se il sistema è l'unico modo per valutare il dataset non c'è nessun altra maniera di sapere se la qualità è ok.
+
+**Serve un terzo componente.** => ground truth => list of documents from the dataset che sono gli expected documents for a given query. La ground truth è QUERY, ASSOCIATA CON LA RIGHT ANSWER. Così posso far andare queste query sul mio sistema e vedere se ho il risultato che mi aspetto grazie alla ground truth. 
+
+Per costrutire la ground truth: grazie a dataset di ground truth, grazie a un grande numero di utenti che lo fanno manualmente. Importante avere le risposte corrette e anche le risposte FALSE corrette. "No, non è questo documento".
+
+**Context annotation** la maggior parte dei tweets sono annotati: con domain e entity. Il domain indica la categoria del tweet. La context annotation è usata per creare la ground truth
+
+Run the query, rank the documents and then select the top x OPPURE (ed è meglio) si può usare una soglia 
+
+**The notion of quality**
+Definition 1: when the documents contained in Aq,C are relevant to q. We can measure the quality of our system according to this notion of quality, called **Precision**.  
+**Precision = relevant retrieved/retrieved***
+
+Precision is necessary but not sufficient property of a good search system. *Many relevant documents CAN MISS despite having a precision of one.*  
+SERVE UN'ALTRA MISURA 
+Definition 2: when all the relevant documents contained in C are retrieved by q **si chiama RECALL = relevant retrieved/relevant** 
+
+*in Web: download subset of data, creare ground truth e poi valutare dati su questo sample*
+
+RECALL NON è ABBASTANZA, SERVE UN'ALTRA MISURA. Inoltre bisogna bilancare con precision, buona precisione e buon recall. In alcune applicazioni recall è piu importante di precision e viceversa.  
+Definition 3: we aim at a system with a good tradeoff between precision and recall; this can be measured by
+the **f1-score**
+
+positive/negative = retrieved/not retrieved by the system  
+True = correct  
+False = not correct  
+
+Possiamo definire Precision, Recall e F1 grazie a TP e FP.
+
