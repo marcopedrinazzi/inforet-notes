@@ -64,3 +64,17 @@ False = not correct
 
 Possiamo definire Precision, Recall e F1 grazie a TP e FP.
 
+The accuracy is how many true (TP o TN) things i did in the whole dataset. Non buono. Meglio lavorare su TP, FP, FN (FP e FN sono gli errori e TP è il positive correct result)
+ 
+Confusion matrix. Permette di avere una visione d'insieme.
+
+Il mapping nell'esempio di tweet search è la ground truth. Variabile M.
+
+Importante avere più di una/due query su cui lavorare.
+
+The domain e entity data corrispondono a due diversi information needs.
+
+Una maniera per rappresentare la ground truh è tramite in set. Oppure tramite un vettore con dimensione pari a quella di tutto il dataset. Ogni elemento del vettore corrisponde ad un documento (come posizione) e ogni elemento è 0/1. Quindi è una variabile casuale RISPETTO alla query. 0 è falso 1 è vero.
+
+Pseudo cosine
+
