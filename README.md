@@ -78,3 +78,4 @@ Una maniera per rappresentare la ground truh è tramite in set. Oppure tramite u
 
 Pseudo cosine
 
+Per settare un threshold si fanno dei calcoli statistici.
