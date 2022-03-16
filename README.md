@@ -79,3 +79,29 @@ Una maniera per rappresentare la ground truh è tramite in set. Oppure tramite u
 Pseudo cosine
 
 Per settare un threshold si fanno dei calcoli statistici.
+
+# Lezione 4
+
+In tweet search mostra l'implementazione di ciò che è stato fatto from scratch in l3 ma con funzioni di scikit learn.
+
+support = numero di documenti in quella classe rispetto al totale del sistema. Guardando la confusion matrix ci si fa una idea di come performare il sistema.
+
+Settare threshold diversi cambia completamente le performance del sistema
+
+Cosa ci si aspetta dai ranking systems? che i top results siano corretti.  
+i_precision = interpolated precision
+
+Una slope nella pr curve è negativa 
+----
+Consideriamo parole indipendenti dalle altre.
+
+Feedback e si usa il feedback per migliorare le query. (query expansion)
+
+Rocchio algorithm: The idea is to push the new query towards the centroid of the true positive results, according to the relevance feedback, and far from the false positive ones. 
+
+Il grafico su Rocchio Algorithm dice come far ottenere un migliore risultato. Query => revised queyr.
+
+Ground truth as feedback => wrong
+
+# Lezione 5
+
