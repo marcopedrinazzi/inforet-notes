@@ -103,5 +103,42 @@ Il grafico su Rocchio Algorithm dice come far ottenere un migliore risultato. Qu
 
 Ground truth as feedback => wrong
 
-# Lezione 5
+# Lezione 5 (continua argomenti lezione 4 all'inizio)
+
+WordNet è organizzato come un dizionario. https://www.nltk.org/howto/wordnet.html
+Synset sono i significati.
+WordNet è una knowledge base => devo curare e stare attento ai significati diversi. "WORD DISAMBIGUATION". Si ha anche su wikipedia => se cerco su wikipedia Berlin appaio tanti risultati.
+
+Wikidata is a free and open knowledge base that can be read and edited by both humans and machines.
+Wikidata acts as central storage for the structured data of its Wikimedia sister projects including Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others.
+
+query.wikidata.org => a way to add knowledge
+
+ConceptNet è un'altra maniera per aggiungere knowldge. E' una via di mezzo/mix tra wordnet e wikidata. https://conceptnet.io
+
+# Lezione 6 (slide p1-5)
+
+Slide 7
+
+# Lezione 7 (slide p1-5)
+
+(fine probabilistic)
+
+**TOPIC MODELING**: il problema di dare un significato è difficile. Cosa vuol dire "meaning"? Il meaning dipende dal contesto. Ogni parola ha un contesto ma devo tenere in considerazione il contesto in cui viene usata.
+
+Problemi vector space model: high dimensionality, synonymy, ambiguity.
+
+Capire il topic del documento => per dare risposta alla query.
+
+LSI è l'idea originale, non molto usata attualmente ma comunque effective
+
+# Lezione 8
+
+LSI for topic modelling: trovare latent variable che rappresentano il significato di collezione di documenti. le latent variable sono i topics. I topic possono migliorare la ricerca, non cerchiamo per parole specifiche ma trasformiamo la query in latent variable information e usiamo queste informazione per la ricerca
+-------
+Topic modeling: extracts topic associated with a terminology. The topic is a latent variable, it doesnt have an interpretation per se, you have to see the most relevant words for the topic to understand its meaning.
+Second one: it is an alternative way to vectorize a document, alternative to tfidf
+
+# Lezione 9
+
 
