@@ -141,4 +141,9 @@ Second one: it is an alternative way to vectorize a document, alternative to tfi
 
 # Lezione 9
 
+**Text classification**: la classificazione può essere supervised or unsupervised. (a lezione vediamo unsupervised). La classificazione è basata solo sui documenti in questo caso.  
+
+Overlapping classes: each document can be in more than one class
+
+soft binary: è una delle due ma con una certa probabilità (fuzzy classification)
 
