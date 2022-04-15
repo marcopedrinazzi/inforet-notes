@@ -156,3 +156,7 @@ fit and predict
 **Ex** - ANOTHER STRATEGY to describe clusters: Take the centroid and extract the most representative doc per ogni cluster
 
 **SUPERVISED TEXT CLASSIFIFICATION**
+
+# Lezione 11
+
+**LINEAR CLASSIFIERS** non ha fatto slide. Solo il notebook.
