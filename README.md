@@ -160,3 +160,51 @@ fit and predict
 # Lezione 11
 
 **LINEAR CLASSIFIERS** non ha fatto slide. Solo il notebook.
+
+# Lezione 12 (inizio parte 2 - language models)
+Language models supervised approach.
+Guess the sentiment
+
+Statistical language models e neural language models
+
+**Natural language is often ambigous and hard to understand. Another issue is that there are many possible levels of interpretation in a language**
+
+A dialogue/a sentence is an example of a sequence. 
+
+Chain rule and markov => statistical language models
+
+Stima probabilità prima formula diventa complessa quando il nnumero di parole sale => risolvo con markov process o n-order markov assumption! (seconda formula)
+
+Come posso valutare la qualità del modello che implementa questa cosa? Perplexity => how much perplexity the model gets observing unseend data
+
+Entropy generalize surpirse. Perpplexity is a measure of confidence not accuracy
+
+They can create a new word. Part of speech e words per creare parole corrette
+
+Sequence learning: NB gli shcemi. Sequence learning LAVORA NEL TEMPO.
+
+**P2-L2** => RNN
+LSTM è una variante di RNN. GRU è una variante di LSTM.
+
+# Lezione 13 
+Il prof usa pyTorch. Obiettivo dell'esempio è: data word => trovare lang corretta. Language detection basata su sequenza di caratteri.
+RNN implements sequence learning.
+
+Balance the dataset => prendo lo stesso numero di campioni nel dataset.
+
+Long sequence are a problem for RNN
+play io parlo italiano => italiano
+io parlo italiano play => inglese
+=> the position in sequence is relevant
+
+Pytorch ha il modulo RNN
+
+RNN have limits
+
+Enconder Decoder Networks
+
+https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
+
+Attention and self-attention => the network learns what it is important and what is not. (**answer to the long memory problem**)
+
+**arrivato a 1:30:00**
