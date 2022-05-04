@@ -207,4 +207,4 @@ https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
 
 Attention and self-attention => the network learns what it is important and what is not. (**answer to the long memory problem**)
 
-**arrivato a 1:30:00**
+https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
