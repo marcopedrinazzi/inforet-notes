@@ -208,3 +208,20 @@ https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
 Attention and self-attention => the network learns what it is important and what is not. (**answer to the long memory problem**)
 
 https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
+
+# Lezione 14
+
+word2vec works with context (skip gram and CBOW).
+NB to read paper [4]
+word2vec very successful idea
+
+word2vec is not depending in the context of the sequence sense, it depends in the context in general, basically si ha un non contextual understanding of the meaning of the words si ha un single vector per ogni parola rapresenting il signicato in generale per la paorla. limitazione: no difference nuance of senses che si hanno nel linguaggio naturale specialemente per polysenic words. the embedding of the meaning dipende dal dataset che si usa nel tranining. play da dataset sport => giocare. play strumento => da dataset music. Sequence learning => capisce il contesto della sequenza.
+
+# Lezione 15
+
+BERT
+transformers library
+
+bert pre-trained nell'esempio: bert-base-uncased (huggingface.co)
+
+Word prediction => SENTENCE PREDICTION!
